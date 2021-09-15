@@ -7,6 +7,7 @@ public class Dictionary {
     public static void setWords(){
         wordPool.add("communication");
         wordPool.add("science");
+        wordPool.add("programming");
     }
 
 
