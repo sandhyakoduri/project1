@@ -14,8 +14,8 @@ class WordCanvas extends JPanel {
     public WordCanvas(WordGuess wordGuess){
         this.wordGuess = wordGuess;
     }
-    public void paintComponent(Graphics paramGraphics) {
-        Graphics2D graphics2D = (Graphics2D)paramGraphics;
+    public void paintComponent(Graphics graphics) {
+        Graphics2D graphics2D = (Graphics2D)graphics;
         if (!wordGuess.isGameOver()) {
             graphics2D.setColor(Color.blue);
             graphics2D.setFont(new Font("Courier New", 1, 40));

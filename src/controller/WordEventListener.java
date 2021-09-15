@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
-import model.Dictionary;
+import model.Words;
 import view.WordGuess;
 
 public class WordEventListener implements ActionListener {
@@ -19,8 +19,8 @@ public class WordEventListener implements ActionListener {
             for (JButton jButton1 : wordGuess.getKeys())
                 jButton1.setEnabled(true);
 
-            Dictionary.setWords();
-            String str1 = Dictionary.getWords();
+            Words.setWords();
+            String str1 = Words.getWords();
             wordGuess.getGameKey().setText(str1);
 
             String str2 = "";
